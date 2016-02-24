@@ -13,14 +13,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define OCEANPLUGIN_BuoyancyForceComponent_generated_h
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_31_GENERATED_BODY \
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_31_GENERATED_BODY \
 	friend OCEANPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FStructBoneOverride(); \
 	OCEANPLUGIN_API static class UScriptStruct* StaticStruct();
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_RPC_WRAPPERS
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_RPC_WRAPPERS_NO_PURE_DECLS
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_INCLASS_NO_PURE_DECLS \
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_RPC_WRAPPERS
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_RPC_WRAPPERS_NO_PURE_DECLS
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesUBuoyancyForceComponent(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_UBuoyancyForceComponent(); \
@@ -31,7 +31,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UBuoyancyForceComponent*>(this); }
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_INCLASS \
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_INCLASS \
 	private: \
 	static void StaticRegisterNativesUBuoyancyForceComponent(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_UBuoyancyForceComponent(); \
@@ -42,7 +42,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UBuoyancyForceComponent*>(this); }
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_STANDARD_CONSTRUCTORS \
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	OCEANPLUGIN_API UBuoyancyForceComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBuoyancyForceComponent) \
@@ -54,7 +54,7 @@ private: \
 public:
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_ENHANCED_CONSTRUCTORS \
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	OCEANPLUGIN_API UBuoyancyForceComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -66,29 +66,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBuoyancyForceComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBuoyancyForceComponent)
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_54_PROLOG
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_GENERATED_BODY_LEGACY \
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_54_PROLOG
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_RPC_WRAPPERS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_INCLASS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_STANDARD_CONSTRUCTORS \
+	Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_RPC_WRAPPERS \
+	Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_INCLASS \
+	Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_GENERATED_BODY \
+#define Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_RPC_WRAPPERS_NO_PURE_DECLS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_INCLASS_NO_PURE_DECLS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_ENHANCED_CONSTRUCTORS \
+	Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_RPC_WRAPPERS_NO_PURE_DECLS \
+	Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_INCLASS_NO_PURE_DECLS \
+	Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h_57_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class BuoyancyForceComponent."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h
+#define CURRENT_FILE_ID Worship_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyancyForceComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
