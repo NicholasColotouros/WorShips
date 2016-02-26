@@ -20,6 +20,10 @@ Intermediate/*
 # Cache files for the editor to use
 DerivedDataCache/*
 
+Plugins/OceanPlugin/Intermediate/*
+Plugins/OceanPlugin/Binary/*
+
+
 # Mac Artifacts
 .DS_Store
 
