@@ -52,6 +52,12 @@ protected:
 	/** Handler for when a touch input stops. */
 	void TouchStopped(ETouchIndex::Type FingerIndex, FVector Location);
 
+	/** Handler for when target spell view is active **/
+	void TargetSpellViewPressed();
+
+	/** Handler for when target spell view is released **/
+	void TargetSpellViewReleased();
+
 protected:
 	// APawn interface
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
