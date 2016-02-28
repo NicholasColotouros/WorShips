@@ -69,3 +69,7 @@ DerivedDataCache/*
 
 # Content Packs
 Content/StarterContent/*
+
+# Ocean Plugin
+Plugins/OceanPlugin/Binaries/*
+Plugins/OceanPlugin/Intermediate/*
