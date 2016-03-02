@@ -20,7 +20,10 @@ ASCrewMenCharacter::ASCrewMenCharacter(const class FObjectInitializer& ObjectIni
 
 void ASCrewMenCharacter::OnSeePlayer(APawn * Pawn)
 {
+	ASCrewMenController* CrewAi = Cast<ASCrewMenController>(GetController());
+	AWorshipCharacter* SensedPlayer = Cast<AWorshipCharacter>(Pawn);
 
+	CrewAi->SetTargetEnemy(SensedPlayer);
 }
 
 // Called when the game starts or when spawned
