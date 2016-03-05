@@ -16,7 +16,11 @@ struct FHitResult;
 #endif
 #define OCEANPLUGIN_FlockFish_generated_h
 
+<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_RPC_WRAPPERS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_RPC_WRAPPERS \
+>>>>>>> origin/master
  \
 	DECLARE_FUNCTION(execOnEndOverlap) \
 	{ \
@@ -39,7 +43,11 @@ struct FHitResult;
 	}
 
 
+<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+>>>>>>> origin/master
  \
 	DECLARE_FUNCTION(execOnEndOverlap) \
 	{ \
@@ -62,7 +70,11 @@ struct FHitResult;
 	}
 
 
+<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_INCLASS_NO_PURE_DECLS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_INCLASS_NO_PURE_DECLS \
+>>>>>>> origin/master
 	private: \
 	static void StaticRegisterNativesAFlockFish(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_AFlockFish(); \
@@ -73,7 +85,11 @@ struct FHitResult;
 	virtual UObject* _getUObject() const override { return const_cast<AFlockFish*>(this); }
 
 
+<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_INCLASS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_INCLASS \
+>>>>>>> origin/master
 	private: \
 	static void StaticRegisterNativesAFlockFish(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_AFlockFish(); \
@@ -84,7 +100,11 @@ struct FHitResult;
 	virtual UObject* _getUObject() const override { return const_cast<AFlockFish*>(this); }
 
 
+<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_STANDARD_CONSTRUCTORS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_STANDARD_CONSTRUCTORS \
+>>>>>>> origin/master
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFlockFish(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFlockFish) \
@@ -96,7 +116,11 @@ private: \
 public:
 
 
+<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_ENHANCED_CONSTRUCTORS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_ENHANCED_CONSTRUCTORS \
+>>>>>>> origin/master
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API AFlockFish(const AFlockFish& InCopy); \
@@ -106,6 +130,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFlockFish); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFlockFish)
 
 
+<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_30_PROLOG
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
@@ -113,22 +138,44 @@ public: \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_RPC_WRAPPERS \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_INCLASS \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_STANDARD_CONSTRUCTORS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_30_PROLOG
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_RPC_WRAPPERS \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_INCLASS \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_STANDARD_CONSTRUCTORS \
+>>>>>>> origin/master
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
+<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_INCLASS_NO_PURE_DECLS \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_ENHANCED_CONSTRUCTORS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_INCLASS_NO_PURE_DECLS \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h_33_ENHANCED_CONSTRUCTORS \
+>>>>>>> origin/master
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
+<<<<<<< HEAD
 #define CURRENT_FILE_ID WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h
+=======
+#define CURRENT_FILE_ID WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FlockFish_h
+>>>>>>> origin/master
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
