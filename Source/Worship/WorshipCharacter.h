@@ -18,6 +18,12 @@ class AWorshipCharacter : public ACharacter
 public:
 	AWorshipCharacter();
 
+	UFUNCTION(BlueprintCallable, Category = "PlayerCondition")
+	float GetHealth() const;
+
+	UFUNCTION(BlueprintCallable, Category = "PlayerCondition")
+	bool CheckIfAlive() const;
+
 	/** Base turn rate, in deg/sec. Other scaling may affect final turn rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category=Camera)
 	float BaseTurnRate;
@@ -27,6 +33,10 @@ public:
 	float BaseLookUpRate;
 
 protected:
+
+	//Health of a character
+	UPROPERTY(EditDefaultsOnly, Category="PlayerCondition", Replicated)
+	float Health;
 
 	/** Called for forwards/backward input */
 	void MoveForward(float Value);

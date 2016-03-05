@@ -41,6 +41,16 @@ AWorshipCharacter::AWorshipCharacter()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 }
 
+float AWorshipCharacter::GetHealth() const
+{
+	return Health;
+}
+
+bool AWorshipCharacter::CheckIfAlive() const
+{
+	return Health > 0;
+}
+
 //////////////////////////////////////////////////////////////////////////
 // Input
 
