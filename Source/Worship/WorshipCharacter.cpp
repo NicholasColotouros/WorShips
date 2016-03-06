@@ -39,6 +39,8 @@ AWorshipCharacter::AWorshipCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+	CheatCodeInput = new RotatingArray<EControllerInputEnum::Type>(MaxCheatCodeLength);
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -139,4 +141,10 @@ void AWorshipCharacter::TargetSpellViewPressed()
 void AWorshipCharacter::TargetSpellViewReleased()
 {
 	CameraBoom->TargetArmLength = 300.0f;
+}
+
+ECheatCodeEnum::Type AWorshipCharacter::CheckCheatCodeInput()
+{
+	// TODO
+	return ECheatCodeEnum::NONE;
 }
