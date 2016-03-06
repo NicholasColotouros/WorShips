@@ -13,9 +13,15 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define OCEANPLUGIN_BuoyantDestructibleComponent_generated_h
 
-#define Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS
-#define Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS
-#define Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS_NO_PURE_DECLS \
+<<<<<<< HEAD
+#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS
+#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS
+#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS_NO_PURE_DECLS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS_NO_PURE_DECLS \
+>>>>>>> origin/master
 	private: \
 	static void StaticRegisterNativesUBuoyantDestructibleComponent(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_UBuoyantDestructibleComponent(); \
@@ -26,7 +32,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UBuoyantDestructibleComponent*>(this); }
 
 
-#define Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS \
+<<<<<<< HEAD
+#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS \
+>>>>>>> origin/master
 	private: \
 	static void StaticRegisterNativesUBuoyantDestructibleComponent(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_UBuoyantDestructibleComponent(); \
@@ -37,7 +47,11 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UBuoyantDestructibleComponent*>(this); }
 
 
-#define Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_STANDARD_CONSTRUCTORS \
+<<<<<<< HEAD
+#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_STANDARD_CONSTRUCTORS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_STANDARD_CONSTRUCTORS \
+>>>>>>> origin/master
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBuoyantDestructibleComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBuoyantDestructibleComponent) \
@@ -49,7 +63,11 @@ private: \
 public:
 
 
-#define Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_ENHANCED_CONSTRUCTORS \
+<<<<<<< HEAD
+#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_ENHANCED_CONSTRUCTORS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_ENHANCED_CONSTRUCTORS \
+>>>>>>> origin/master
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UBuoyantDestructibleComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -61,29 +79,52 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UBuoyantDestructibleComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UBuoyantDestructibleComponent)
 
 
-#define Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_27_PROLOG
-#define Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_GENERATED_BODY_LEGACY \
+<<<<<<< HEAD
+#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_27_PROLOG
+#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS \
-	Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS \
-	Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_STANDARD_CONSTRUCTORS \
+	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS \
+	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS \
+	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_STANDARD_CONSTRUCTORS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_27_PROLOG
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_GENERATED_BODY_LEGACY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_STANDARD_CONSTRUCTORS \
+>>>>>>> origin/master
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_GENERATED_BODY \
+<<<<<<< HEAD
+#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
-	Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS_NO_PURE_DECLS \
-	Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_ENHANCED_CONSTRUCTORS \
+	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS_NO_PURE_DECLS \
+	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_ENHANCED_CONSTRUCTORS \
+=======
+#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_GENERATED_BODY \
+PRAGMA_DISABLE_DEPRECATION_WARNINGS \
+public: \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_INCLASS_NO_PURE_DECLS \
+	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h_30_ENHANCED_CONSTRUCTORS \
+>>>>>>> origin/master
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class BuoyantDestructibleComponent."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID Warships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h
+<<<<<<< HEAD
+#define CURRENT_FILE_ID WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h
+=======
+#define CURRENT_FILE_ID WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_BuoyantDestructibleComponent_h
+>>>>>>> origin/master
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
