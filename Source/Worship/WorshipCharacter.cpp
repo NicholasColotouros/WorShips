@@ -57,6 +57,8 @@ void AWorshipCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 	InputComponent->BindAction("TargetSpell", IE_Pressed, this, &AWorshipCharacter::TargetSpellViewPressed);
 	InputComponent->BindAction("TargetSpell", IE_Released, this, &AWorshipCharacter::TargetSpellViewReleased);
 
+	InputComponent->BindAction("CheatCodeButtonPressed", IE_Pressed, this, &AWorshipCharacter::CheatCodeButtonPressed);
+
 	InputComponent->BindAxis("MoveForward", this, &AWorshipCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AWorshipCharacter::MoveRight);
 
@@ -141,6 +143,29 @@ void AWorshipCharacter::TargetSpellViewPressed()
 void AWorshipCharacter::TargetSpellViewReleased()
 {
 	CameraBoom->TargetArmLength = 300.0f;
+}
+
+void AWorshipCharacter::CheatCodeButtonPressed()
+{
+	APlayerController* controller = Cast<APlayerController, AController>(Controller);
+	if (controller)
+	{
+		// DPad
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_DPad_Down)) { CheatCodeInput->Add(EControllerInputEnum::DOWN); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_DPad_Left)) { CheatCodeInput->Add(EControllerInputEnum::LEFT); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_DPad_Right)) { CheatCodeInput->Add(EControllerInputEnum::RIGHT); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_DPad_Up)) { CheatCodeInput->Add(EControllerInputEnum::UP); }
+
+		// Start/Select
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_Special_Left)) { CheatCodeInput->Add(EControllerInputEnum::SELECT); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_Special_Right)) { CheatCodeInput->Add(EControllerInputEnum::START); }
+
+		// Face Buttons
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Bottom)) { CheatCodeInput->Add(EControllerInputEnum::A); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Left)) { CheatCodeInput->Add(EControllerInputEnum::X); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Right)) { CheatCodeInput->Add(EControllerInputEnum::B); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Top)) { CheatCodeInput->Add(EControllerInputEnum::Y); }
+	}
 }
 
 ECheatCodeEnum::Type AWorshipCharacter::CheckCheatCodeInput()

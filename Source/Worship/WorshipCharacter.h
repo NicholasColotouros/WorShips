@@ -20,16 +20,7 @@ namespace EControllerInputEnum
 		RIGHT	UMETA(DisplayName = "D-Pad Right"),
 
 		START	UMETA(DisplayName = "Start Button"),
-		SELECT	UMETA(DisplayName = "Select Button"),
-
-		LS		UMETA(DisplayName = "Left Thumbstick"),
-		RS		UMETA(DisplayName = "Right Thumbstick"),
-
-		LB		UMETA(DisplayName = "Left Bumper"),
-		LT		UMETA(DisplayName = "Left Trigger"),
-
-		RB		UMETA(DisplayName = "Right Bumper"),
-		RT		UMETA(DisplayName = "Right Trigger")
+		SELECT	UMETA(DisplayName = "Select Button")
 	};
 }
 
@@ -117,5 +108,6 @@ private:
 	// Handles cheat code input
 	const int MaxCheatCodeLength = 11;
 	RotatingArray<EControllerInputEnum::Type> *CheatCodeInput;
+	void CheatCodeButtonPressed();
 };
 
