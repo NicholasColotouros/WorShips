@@ -41,6 +41,7 @@ AWorshipCharacter::AWorshipCharacter()
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
 
 	CheatCodeInput = new RotatingArray<EControllerInputEnum::Type>(MaxCheatCodeLength);
+	InitializeCheatCodes();
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -168,8 +169,67 @@ void AWorshipCharacter::CheatCodeButtonPressed()
 	}
 }
 
+void AWorshipCharacter::InitializeCheatCodes()
+{
+	CheatCodes = new TMap<ECheatCodeEnum::Type, TArray<EControllerInputEnum::Type>>();
+
+	// Insert the konami Code
+	TArray<EControllerInputEnum::Type>* konamiCode = new TArray<EControllerInputEnum::Type>();
+	konamiCode->Add(EControllerInputEnum::UP);
+	konamiCode->Add(EControllerInputEnum::UP);
+	konamiCode->Add(EControllerInputEnum::DOWN);
+	konamiCode->Add(EControllerInputEnum::DOWN);
+	konamiCode->Add(EControllerInputEnum::LEFT);
+	konamiCode->Add(EControllerInputEnum::RIGHT);
+	konamiCode->Add(EControllerInputEnum::LEFT);
+	konamiCode->Add(EControllerInputEnum::RIGHT);
+	konamiCode->Add(EControllerInputEnum::A);
+	konamiCode->Add(EControllerInputEnum::B);
+	konamiCode->Add(EControllerInputEnum::START);
+
+	CheatCodes->Add(ECheatCodeEnum::KONAMICODE, *konamiCode);
+	
+	ActivateCheatCode();
+}
+
+// Checks input and returns the matching cheat code, if any
 ECheatCodeEnum::Type AWorshipCharacter::CheckCheatCodeInput()
 {
-	// TODO
+	if (CheatCodes && CheatCodeInput)
+	{
+		for (auto cheatCodeIt = CheatCodes->CreateIterator(); cheatCodeIt; ++cheatCodeIt)
+		{
+			ECheatCodeEnum::Type code = cheatCodeIt.Key();
+			TArray<EControllerInputEnum::Type>& codeSequence = cheatCodeIt.Value();
+
+			bool sequenceMatched = true;
+			for (int i = 0; i < codeSequence.Num(); i++)
+			{
+				if (codeSequence[i] != CheatCodeInput->Get(i))
+				{
+					sequenceMatched = false;
+				}
+			}
+			if (sequenceMatched)
+			{
+				return code;
+			}
+		}
+	}
 	return ECheatCodeEnum::NONE;
+}
+
+void AWorshipCharacter::ActivateCheatCode()
+{
+	ECheatCodeEnum::Type codeEntered = CheckCheatCodeInput();
+	switch (codeEntered)
+	{
+		case ECheatCodeEnum::KONAMICODE:
+			// TODO
+			break;
+
+		case ECheatCodeEnum::NONE:
+		default:
+			break;
+	}
 }

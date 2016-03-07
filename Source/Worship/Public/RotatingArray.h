@@ -67,8 +67,8 @@ void RotatingArray<T>::Add(T element)
 }
 
 // Assumes 0 <= n < Length
-// 0 is the oldest element
-// Length - 1 is the most recent element
+// Length -1 is the oldest element
+// 0 is the most recent element
 template<class T>
 T RotatingArray<T>::Get(int n)
 {

@@ -30,7 +30,7 @@ namespace ECheatCodeEnum
 	enum Type
 	{
 		NONE		UMETA(DisplayName = "None"),
-		KONAMIKODE	UMETA(DisplayName = "Konami Code")
+		KONAMICODE	UMETA(DisplayName = "Konami Code")
 	};
 }
 
@@ -56,9 +56,6 @@ public:
 	/** Base look up/down rate, in deg/sec. Other scaling may affect final rate. */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 	float BaseLookUpRate;
-
-	UFUNCTION(BlueprintCallable, Category = Cheats)
-	ECheatCodeEnum::Type CheckCheatCodeInput();
 
 protected:
 
@@ -108,6 +105,11 @@ private:
 	// Handles cheat code input
 	const int MaxCheatCodeLength = 11;
 	RotatingArray<EControllerInputEnum::Type> *CheatCodeInput;
+	TMap<ECheatCodeEnum::Type, TArray<EControllerInputEnum::Type>> *CheatCodes;
+
+	void InitializeCheatCodes();
 	void CheatCodeButtonPressed();
+	ECheatCodeEnum::Type CheckCheatCodeInput();
+	void ActivateCheatCode();
 };
 
