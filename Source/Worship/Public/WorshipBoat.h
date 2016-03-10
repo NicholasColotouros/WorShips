@@ -6,15 +6,16 @@
 #include "WorshipBoat.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class WORSHIP_API AWorshipBoat : public AWorshipVehicle
 {
 	GENERATED_BODY()
-	
-//public:
-//	virtual void GearChange(int gear);
-	
-	
+
+public:
+	UFUNCTION(BlueprintImplementableEvent, Category = Controls)
+		void GearChange(int32 gear);
+
+
 };

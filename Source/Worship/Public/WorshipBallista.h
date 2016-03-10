@@ -6,16 +6,17 @@
 #include "WorshipBallista.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class WORSHIP_API AWorshipBallista : public AWorshipVehicle
 {
 	GENERATED_BODY()
 
-//public:
-//	void Fire();
+public:
+	UFUNCTION(BlueprintImplementableEvent, Category = Controls)
+		void Fire();
 
-	
-	
+
+
 };
