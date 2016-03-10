@@ -13,8 +13,8 @@ class WORSHIP_API AWorshipBallista : public AWorshipVehicle
 {
 	GENERATED_BODY()
 
-public:
-	void Fire();
+//public:
+//	void Fire();
 
 	
 	

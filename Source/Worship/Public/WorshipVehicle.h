@@ -18,12 +18,12 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = "DmgSystem")
 	int32 Health;
 	
-	virtual void TakeDamage(int32 damageDealt);
-	virtual void Die();
+//	virtual void TakeDamage(int32 damageDealt);
+	/*virtual void Die();
 
 	virtual void Turn(float axisValue);
 	virtual void LookUp(float axisValue);
-
+*/
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

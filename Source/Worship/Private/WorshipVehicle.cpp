@@ -30,14 +30,14 @@ void AWorshipVehicle::SetupPlayerInputComponent(class UInputComponent* InputComp
 	Super::SetupPlayerInputComponent(InputComponent);
 
 }
-
-void AWorshipVehicle::TakeDamage(int32 damageDealt)
-{
-	Health -= damageDealt;
-	if (Health <= 0) Die();
-}
-
-void AWorshipVehicle::Die()
-{
-	Destroy();
-}
+//
+//void AWorshipVehicle::TakeDamage(int32 damageDealt)
+//{
+//	Health -= damageDealt;
+//	if (Health <= 0) Die();
+//}
+//
+//void AWorshipVehicle::Die()
+//{
+//	Destroy();
+//}

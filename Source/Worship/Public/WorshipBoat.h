@@ -13,8 +13,8 @@ class WORSHIP_API AWorshipBoat : public AWorshipVehicle
 {
 	GENERATED_BODY()
 	
-public:
-	virtual void GearChange(int gear);
+//public:
+//	virtual void GearChange(int gear);
 	
 	
 };
