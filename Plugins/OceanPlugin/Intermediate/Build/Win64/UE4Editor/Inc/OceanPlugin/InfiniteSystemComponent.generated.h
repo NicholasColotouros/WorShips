@@ -13,15 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define OCEANPLUGIN_InfiniteSystemComponent_generated_h
 
-<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_RPC_WRAPPERS
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_RPC_WRAPPERS_NO_PURE_DECLS
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_INCLASS_NO_PURE_DECLS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_RPC_WRAPPERS
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_RPC_WRAPPERS_NO_PURE_DECLS
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_INCLASS_NO_PURE_DECLS \
->>>>>>> origin/master
 	private: \
 	static void StaticRegisterNativesUInfiniteSystemComponent(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_UInfiniteSystemComponent(); \
@@ -32,11 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UInfiniteSystemComponent*>(this); }
 
 
-<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_INCLASS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_INCLASS \
->>>>>>> origin/master
 	private: \
 	static void StaticRegisterNativesUInfiniteSystemComponent(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_UInfiniteSystemComponent(); \
@@ -47,11 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<UInfiniteSystemComponent*>(this); }
 
 
-<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_STANDARD_CONSTRUCTORS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_STANDARD_CONSTRUCTORS \
->>>>>>> origin/master
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	OCEANPLUGIN_API UInfiniteSystemComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UInfiniteSystemComponent) \
@@ -63,11 +49,7 @@ private: \
 public:
 
 
-<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_ENHANCED_CONSTRUCTORS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_ENHANCED_CONSTRUCTORS \
->>>>>>> origin/master
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	OCEANPLUGIN_API UInfiniteSystemComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -79,7 +61,6 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInfiniteSystemComponent); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UInfiniteSystemComponent)
 
 
-<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_39_PROLOG
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
@@ -87,44 +68,22 @@ public: \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_RPC_WRAPPERS \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_INCLASS \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_STANDARD_CONSTRUCTORS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_39_PROLOG
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_GENERATED_BODY_LEGACY \
-PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-public: \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_RPC_WRAPPERS \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_INCLASS \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_STANDARD_CONSTRUCTORS \
->>>>>>> origin/master
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-<<<<<<< HEAD
 #define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_INCLASS_NO_PURE_DECLS \
 	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_ENHANCED_CONSTRUCTORS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_GENERATED_BODY \
-PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-public: \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_RPC_WRAPPERS_NO_PURE_DECLS \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_INCLASS_NO_PURE_DECLS \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h_42_ENHANCED_CONSTRUCTORS \
->>>>>>> origin/master
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class InfiniteSystemComponent."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-<<<<<<< HEAD
 #define CURRENT_FILE_ID WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h
-=======
-#define CURRENT_FILE_ID WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_InfiniteSystemComponent_h
->>>>>>> origin/master
 
 
 #define FOREACH_ENUM_EFOLLOWMETHOD(op) \

@@ -17,5 +17,8 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, Category = Controls)
 		void GearChange(int32 gear);
 
+	virtual void Tick(float DeltaSeconds) override;
 
+	UPROPERTY(EditDefaultsOnly, Category = "AI")
+	class UBehaviorTree* BehaviorTree;
 };
