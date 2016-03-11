@@ -14,8 +14,10 @@ class WORSHIP_API AWorshipBoat : public AWorshipVehicle
 	GENERATED_BODY()
 
 public:
-	UFUNCTION(BlueprintImplementableEvent, Category = Controls)
-		void GearChange(int32 gear);
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
+		void GearUp();
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
+		void GearDown();
 
 };
