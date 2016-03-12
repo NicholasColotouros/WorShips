@@ -20,12 +20,8 @@ public:
 
 	virtual void Tick(float DeltaSeconds) override;
 
-<<<<<<< HEAD
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
-		void GearDown();
-=======
-	virtual void BeginPlay() override;
->>>>>>> 8c09603bcf2ebb65e0ae50db6c4bab82f0ffefbf
+	void GearDown();
 
 	UPROPERTY(EditDefaultsOnly, Category = "AI")
 	class UBehaviorTree* BehaviorTree;

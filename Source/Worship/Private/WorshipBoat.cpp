@@ -2,16 +2,11 @@
 
 #include "Worship.h"
 #include "WorshipBoat.h"
-#include "VehicleAIController.h"
+#include "WorshipBoatAIController.h"
 
 void AWorshipBoat::Tick(float DeltaSeconds)
 {
 	Super::Tick(DeltaSeconds);
 
-	AVehicleAIController* AIController = Cast<AVehicleAIController>(GetController());
-}
-
-void AWorshipBoat::BeginPlay()
-{
-	Super::BeginPlay();
+	AWorshipBoatAIController* AIController = Cast<AWorshipBoatAIController>(GetController());
 }
