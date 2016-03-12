@@ -10,3 +10,8 @@ void AWorshipBoat::Tick(float DeltaSeconds)
 
 	AVehicleAIController* AIController = Cast<AVehicleAIController>(GetController());
 }
+
+void AWorshipBoat::BeginPlay()
+{
+	Super::BeginPlay();
+}
