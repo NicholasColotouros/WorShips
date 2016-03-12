@@ -29,21 +29,18 @@ public:
 
 public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)
-		int32 Health;
+		float Health;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)
 		APawn* CurrentlyPossessing;
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = DmgSystem)
-		void TakeDamage();
-
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = DmgSystem)
 		void Die();
 
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = DmgSystem)
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
 		void Turn(float axisValue);
 
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = DmgSystem)
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
 		void LookUp(float axisValue);
 
 };

@@ -15,9 +15,13 @@ class WORSHIP_API AWorshipBoat : public AWorshipVehicle
 
 public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
-		void GearChange(int32 gear);
+		void GearUp();
+
 
 	virtual void Tick(float DeltaSeconds) override;
+
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
+		void GearDown();
 
 	UPROPERTY(EditDefaultsOnly, Category = "AI")
 	class UBehaviorTree* BehaviorTree;
