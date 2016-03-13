@@ -27,11 +27,15 @@ EBTNodeResult::Type UBasicMove::ExecuteTask(UBehaviorTreeComponent & OwnerComp, 
 	{
 		CurrentPawn->GearUp();
 	}
-	/*APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(),0);
+	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(),0);
 	if (PlayerPawn == nullptr)
 	{
-		return EBTNodeResult
-	}*/
-		
+		return EBTNodeResult::Failed;
+	}
+	
+	FVector Waypoint = PlayerPawn->GetActorLocation();
+	OwnerComp.GetBlackboardComponent()->SetValue<UBlackboardKeyType_Vector>(BlackboardKey.GetSelectedKeyID(), Waypoint);
+
 	return EBTNodeResult::Succeeded;
+	
 }

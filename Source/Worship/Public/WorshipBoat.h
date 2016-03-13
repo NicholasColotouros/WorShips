@@ -15,8 +15,7 @@ class WORSHIP_API AWorshipBoat : public AWorshipVehicle
 
 public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
-		void GearUp();
-
+	void GearUp();
 
 	virtual void Tick(float DeltaSeconds) override;
 
