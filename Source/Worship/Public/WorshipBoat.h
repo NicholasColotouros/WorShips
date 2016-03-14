@@ -22,6 +22,7 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
 	void GearDown();
 
+
 	UPROPERTY(EditDefaultsOnly, Category = "AI")
 	class UBehaviorTree* BehaviorTree;
 };

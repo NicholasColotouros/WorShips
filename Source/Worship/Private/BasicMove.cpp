@@ -4,6 +4,7 @@
 #include "BasicMove.h"
 #include "WorshipBoatAIController.h"
 #include "WorshipBoat.h"
+#include "Kismet/KismetMathLibrary.h"
 
 /* AI Module includes */
 #include "BehaviorTree/BehaviorTreeComponent.h"
@@ -23,18 +24,45 @@ EBTNodeResult::Type UBasicMove::ExecuteTask(UBehaviorTreeComponent & OwnerComp, 
 	{
 		return EBTNodeResult::Failed;
 	}
-	for (size_t i = 0; i < 5; i++)
+	for (size_t i = 0; i < 4; i++)
 	{
 		CurrentPawn->GearUp();
+		
 	}
-	APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(),0);
+	for (size_t i = 0; i < 2; i++)
+	{
+		CurrentPawn->Turn(90.0);
+	}
+	
+	/*APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(),0);
 	if (PlayerPawn == nullptr)
 	{
 		return EBTNodeResult::Failed;
 	}
-	
-	FVector Waypoint = PlayerPawn->GetActorLocation();
-	OwnerComp.GetBlackboardComponent()->SetValue<UBlackboardKeyType_Vector>(BlackboardKey.GetSelectedKeyID(), Waypoint);
+	//get the player's location
+	FVector PlayerLocation = PlayerPawn->GetActorLocation();
+	//get the ai pawn's location
+	FVector CurrentPawnLocation = CurrentPawn->GetActorLocation();
+	//substract to get get "directional" vector from the ai boat to the player's boat
+	FVector DirectionalVector = PlayerLocation - CurrentPawnLocation;
+
+	//Calculate the distance between 2 vectors
+	float DVectorLength = PlayerLocation.Size();
+	float CLocationLenght = CurrentPawnLocation.Size();
+	float CLocationDotDVector = FVector::DotProduct(CurrentPawnLocation, DirectionalVector);
+
+	float angle = UKismetMathLibrary::Acos(CLocationDotDVector / (CLocationLenght*DVectorLength));
+
+	if (angle >= 0 && angle <= 180)
+	{
+		//turn right
+		CurrentPawn->Turn(45.0);
+	}
+	else if (angle > 180 && angle < 360)
+	{
+		//turn left
+		CurrentPawn->Turn(-90.0);
+	}*/
 
 	return EBTNodeResult::Succeeded;
 	
