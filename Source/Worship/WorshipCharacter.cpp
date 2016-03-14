@@ -58,8 +58,6 @@ void AWorshipCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 	InputComponent->BindAction("TargetSpell", IE_Pressed, this, &AWorshipCharacter::TargetSpellViewPressed);
 	InputComponent->BindAction("TargetSpell", IE_Released, this, &AWorshipCharacter::TargetSpellViewReleased);
 
-	InputComponent->BindAction("CheatCodeButtonPressed", IE_Pressed, this, &AWorshipCharacter::CheatCodeButtonPressed);
-
 	InputComponent->BindAxis("MoveForward", this, &AWorshipCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AWorshipCharacter::MoveRight);
 
@@ -188,8 +186,6 @@ void AWorshipCharacter::InitializeCheatCodes()
 	konamiCode->Add(EControllerInputEnum::START);
 
 	CheatCodes->Add(ECheatCodeEnum::KONAMICODE, *konamiCode);
-	
-	ActivateCheatCode();
 }
 
 // Checks input and returns the matching cheat code, if any
@@ -217,19 +213,4 @@ ECheatCodeEnum::Type AWorshipCharacter::CheckCheatCodeInput()
 		}
 	}
 	return ECheatCodeEnum::NONE;
-}
-
-void AWorshipCharacter::ActivateCheatCode()
-{
-	ECheatCodeEnum::Type codeEntered = CheckCheatCodeInput();
-	switch (codeEntered)
-	{
-		case ECheatCodeEnum::KONAMICODE:
-			// TODO
-			break;
-
-		case ECheatCodeEnum::NONE:
-		default:
-			break;
-	}
 }

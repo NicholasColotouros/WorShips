@@ -100,6 +100,14 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
+	// Records the last cheat code button pressed
+	UFUNCTION(BlueprintCallable, Category = Cheats)
+		ECheatCodeEnum::Type CheckCheatCodeInput();
+
+	// Returns the cheat code entered if any
+	UFUNCTION(BlueprintCallable, Category = Cheats)
+		void CheatCodeButtonPressed();
+
 private:
 
 	// Handles cheat code input
@@ -108,8 +116,5 @@ private:
 	TMap<ECheatCodeEnum::Type, TArray<EControllerInputEnum::Type>> *CheatCodes;
 
 	void InitializeCheatCodes();
-	void CheatCodeButtonPressed();
-	ECheatCodeEnum::Type CheckCheatCodeInput();
-	void ActivateCheatCode();
 };
 

@@ -73,10 +73,10 @@ template<class T>
 T RotatingArray<T>::Get(int n)
 {
 	int index = n + StartIndex;
-	if (index >= Length)
+	while (index >= Length)
 	{
 		index -= Length;
 	}
-	return (*DataArray)[index];
+	return DataArray->GetData()[index];
 }
 
