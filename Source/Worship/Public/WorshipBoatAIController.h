@@ -19,10 +19,6 @@ class WORSHIP_API AWorshipBoatAIController : public AAIController
 
 	UBehaviorTreeComponent* BehaviorComp;
 
-	UBlackboardComponent* BlackboardComp;
+	UBlackboardComponent* BlackboardComp;	
 
-	void AWorshipBoatAIController::BeginMoveToLocation();
-	
-	
-	
 };

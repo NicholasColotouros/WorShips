@@ -29,16 +29,5 @@ void AWorshipBoatAIController::Possess(APawn * InGamePawn)
 			BlackboardComp->InitializeBlackboard(*BoatBot->BehaviorTree->BlackboardAsset);
 		}
 		BehaviorComp->StartTree(*BoatBot->BehaviorTree);
-
-		//Get the boat moving when start possessing
-		for (size_t i = 0; i < 5; i++)
-		{
-			BoatBot->GearUp();
-		}
 	}
-}
-
-void AWorshipBoatAIController::BeginMoveToLocation()
-{
-	//MoveToLocation(UNavigationSystem::GetRandomPointInNavigableRadius(this, ));
 }
