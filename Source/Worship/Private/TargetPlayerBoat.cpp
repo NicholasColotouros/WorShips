@@ -40,6 +40,8 @@ EBTNodeResult::Type UTargetPlayerBoat::ExecuteTask(UBehaviorTreeComponent & Owne
 		(PlayerLocation.Component(0) - CurrentPawnLocation.Component(0)));
 	//converting to degrees
 	float ThetaDeg = FMath::RadiansToDegrees(Theta);
+	//add 90 to clamp it to the y axis
+	ThetaDeg = ThetaDeg + 90.0f;
 
 	float BoatYaw = 0.0f;
 	float BoatPitch = 0.0f;
@@ -47,21 +49,25 @@ EBTNodeResult::Type UTargetPlayerBoat::ExecuteTask(UBehaviorTreeComponent & Owne
 
 	UKismetMathLibrary::BreakRotator(CurrentPawn->GetActorRotation(),BoatRoll,BoatPitch,BoatYaw);
 	
+	//do this
+	if (ThetaDeg < BoatYaw - 180) {
+		ThetaDeg = ThetaDeg + 360;
+	}
+	else if (ThetaDeg > BoatYaw + 180) {
+		ThetaDeg = ThetaDeg - 360;
+	}
+
 	float ThetaCurrentFacingAngle = ThetaDeg - BoatYaw;
 
-	if (ThetaCurrentFacingAngle <= 0.5f && ThetaCurrentFacingAngle >= -0.5f)
-	{
-		//Do nothing and follow the boat
-	}
-	else if (ThetaCurrentFacingAngle > 0.5f )
-	{
-		//turn left
-		CurrentPawn->Turn(-10.0);
-	}
-	else if (ThetaCurrentFacingAngle < -0.5f )
+	if (ThetaCurrentFacingAngle > 0.0f)
 	{
 		//turn right
 		CurrentPawn->Turn(10.0);
+	}
+	else 
+	{
+		//turn left
+		CurrentPawn->Turn(-10.0);
 	}
 	
 	return EBTNodeResult::Succeeded;
