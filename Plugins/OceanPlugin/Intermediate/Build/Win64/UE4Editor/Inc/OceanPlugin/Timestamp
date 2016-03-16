@@ -1,10 +1,23 @@
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyancyComponent.h
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyancyForceComponent.h
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyantDestructible.h
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyantDestructibleComponent.h
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\CustomVehicleController.h
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\InfiniteSystemComponent.h
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\OceanManager.h
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\Fish\FishManager.h
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\Fish\FlockFish.h
-C:\Users\Nathan\Documents\GitHub\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\Sky\TimeDate.h
+<<<<<<< HEAD
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyancyComponent.h
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyancyForceComponent.h
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyantDestructible.h
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyantDestructibleComponent.h
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\CustomVehicleController.h
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\InfiniteSystemComponent.h
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\OceanManager.h
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\Fish\FishManager.h
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\Fish\FlockFish.h
+C:\Users\David\Documents\Unreal Projects\WarShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\Sky\TimeDate.h
+=======
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyancyComponent.h
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyancyForceComponent.h
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyantDestructible.h
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\BuoyantDestructibleComponent.h
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\CustomVehicleController.h
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\InfiniteSystemComponent.h
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\OceanManager.h
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\Fish\FishManager.h
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\Fish\FlockFish.h
+C:\Users\Calem Bendell\Documents\Unreal Projects\WorShips\Plugins\OceanPlugin\Source\OceanPlugin\Classes\Sky\TimeDate.h
+>>>>>>> origin/master
