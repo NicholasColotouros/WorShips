@@ -13,9 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define OCEANPLUGIN_FishManager_generated_h
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_RPC_WRAPPERS
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_RPC_WRAPPERS_NO_PURE_DECLS
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_INCLASS_NO_PURE_DECLS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_RPC_WRAPPERS
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_RPC_WRAPPERS_NO_PURE_DECLS
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAFishManager(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_AFishManager(); \
@@ -26,7 +26,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AFishManager*>(this); }
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_INCLASS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_INCLASS \
 	private: \
 	static void StaticRegisterNativesAFishManager(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_AFishManager(); \
@@ -37,7 +37,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 	virtual UObject* _getUObject() const override { return const_cast<AFishManager*>(this); }
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_STANDARD_CONSTRUCTORS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AFishManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFishManager) \
@@ -49,7 +49,7 @@ private: \
 public:
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_ENHANCED_CONSTRUCTORS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private copy-constructor, should never be used */ \
 	NO_API AFishManager(const AFishManager& InCopy); \
@@ -59,29 +59,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AFishManager); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AFishManager)
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_30_PROLOG
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_GENERATED_BODY_LEGACY \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_30_PROLOG
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_RPC_WRAPPERS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_INCLASS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_STANDARD_CONSTRUCTORS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_RPC_WRAPPERS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_INCLASS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_GENERATED_BODY \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_INCLASS_NO_PURE_DECLS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_ENHANCED_CONSTRUCTORS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_INCLASS_NO_PURE_DECLS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h_33_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h
+#define CURRENT_FILE_ID Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Fish_FishManager_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
