@@ -13,6 +13,7 @@ AEyeInTheSky::AEyeInTheSky()
 	
 	// Movement and camera
 	MoveSpeed = 2000.0f;
+	StartEyeHeight = 600.0f;
 	EyeHeight = 3000.0f;
 	
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("/Game/Assets/Models/EyeInTheSkyPlaceholder"));
@@ -26,7 +27,7 @@ AEyeInTheSky::AEyeInTheSky()
 	CameraBoom = CreateDefaultSubobject<USpringArmComponent>(TEXT("CameraBoom"));
 	CameraBoom->AttachTo(RootComponent);
 	CameraBoom->bAbsoluteRotation = true; // Don't want arm to rotate when ship does
-	CameraBoom->TargetArmLength = EyeHeight;
+	CameraBoom->TargetArmLength = StartEyeHeight;
 	CameraBoom->RelativeRotation = FRotator(-90.f, 0.f, 0.f);
 	CameraBoom->bDoCollisionTest = false; // Don't want to pull camera in when it collides with level
 
