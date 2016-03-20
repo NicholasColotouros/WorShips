@@ -169,7 +169,6 @@ void AWorshipCharacter::InitializeCheatCodes()
 	konamiCode->Add(EControllerInputEnum::RIGHT);
 	konamiCode->Add(EControllerInputEnum::B);
 	konamiCode->Add(EControllerInputEnum::A);
-	konamiCode->Add(EControllerInputEnum::START);
 
 	CheatCodes->Add(ECheatCodeEnum::KONAMICODE, *konamiCode);
 }
