@@ -55,9 +55,6 @@ void AWorshipCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 	InputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
 
-	InputComponent->BindAction("TargetSpell", IE_Pressed, this, &AWorshipCharacter::TargetSpellViewPressed);
-	InputComponent->BindAction("TargetSpell", IE_Released, this, &AWorshipCharacter::TargetSpellViewReleased);
-
 	InputComponent->BindAxis("MoveForward", this, &AWorshipCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AWorshipCharacter::MoveRight);
 
@@ -131,17 +128,6 @@ void AWorshipCharacter::MoveRight(float Value)
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
 	}
-}
-
-void AWorshipCharacter::TargetSpellViewPressed()
-{
-	CameraBoom->TargetArmLength = 2000.0f;
-}
-
-
-void AWorshipCharacter::TargetSpellViewReleased()
-{
-	CameraBoom->TargetArmLength = 300.0f;
 }
 
 void AWorshipCharacter::CheatCodeButtonPressed()
