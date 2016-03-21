@@ -17,6 +17,8 @@ public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
 		void Fire();
 
+	UPROPERTY(EditDefaultsOnly, Category = "AI")
+	class UBehaviorTree* BehaviorTree;
 
 
 };
