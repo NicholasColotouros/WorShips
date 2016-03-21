@@ -13,6 +13,29 @@ EBTNodeResult::Type UFireBolt::ExecuteTask(UBehaviorTreeComponent & OwnerComp, u
 	{
 		return EBTNodeResult::Failed;
 	}
+
+	//got through the list of active players and check if they're in line of sight
+	FConstPlayerControllerIterator itPlayers = OwnerComp.GetWorld()->GetPlayerControllerIterator();
+	while (itPlayers)
+	{
+		APlayerController* player = *itPlayers;
+		FVector controllerViewPoint;
+		FRotator controllerRotator;
+		CurrentController->GetActorEyesViewPoint(controllerViewPoint,controllerRotator);
+		//check if the player is in the controller's line of sight
+		bool canShoot = CurrentController->LineOfSightTo(player,controllerViewPoint,false);
+		if (canShoot)
+		{
+			CurrentController->SetFocus(player, EAIFocusPriority::Move);
+			FAIMoveRequest targetPlayer = FAIMoveRequest(player);
+			CurrentController->MoveTo(targetPlayer);
+			break;
+		}
+		//move to the next player
+		itPlayers++;
+	}
+
+	
 	CurrentPawn->Fire();
 	return EBTNodeResult::Succeeded;
 }
