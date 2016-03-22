@@ -3,12 +3,23 @@
 #include "Worship.h"
 #include "WorshipVehicle.h"
 
+#include "Engine.h"
+#include "Net/UnrealNetwork.h"
+
 // Sets default values
 AWorshipVehicle::AWorshipVehicle()
 {
 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	bReplicates = true;
+}
 
+void AWorshipVehicle::GetLifetimeReplicatedProps(TArray< FLifetimeProperty>& OutLifetimeProps) const
+{
+	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
+
+
+	DOREPLIFETIME(AWorshipVehicle, Health);
 }
 
 // Called when the game starts or when spawned
