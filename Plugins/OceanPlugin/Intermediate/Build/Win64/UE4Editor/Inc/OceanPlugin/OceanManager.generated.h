@@ -14,29 +14,17 @@ struct FVector;
 #endif
 #define OCEANPLUGIN_OceanManager_generated_h
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_53_GENERATED_BODY \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_53_GENERATED_BODY \
->>>>>>> origin/master
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_53_GENERATED_BODY \
 	friend OCEANPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FWaveSetParameters(); \
 	OCEANPLUGIN_API static class UScriptStruct* StaticStruct();
 
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_33_GENERATED_BODY \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_33_GENERATED_BODY \
->>>>>>> origin/master
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_33_GENERATED_BODY \
 	friend OCEANPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FWaveParameter(); \
 	OCEANPLUGIN_API static class UScriptStruct* StaticStruct();
 
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS \
->>>>>>> origin/master
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execGetWaveHeightValue) \
 	{ \
@@ -46,11 +34,7 @@ struct FVector;
 	}
 
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
->>>>>>> origin/master
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execGetWaveHeightValue) \
 	{ \
@@ -60,11 +44,7 @@ struct FVector;
 	}
 
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS_NO_PURE_DECLS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS_NO_PURE_DECLS \
->>>>>>> origin/master
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesAOceanManager(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_AOceanManager(); \
@@ -75,11 +55,7 @@ struct FVector;
 	virtual UObject* _getUObject() const override { return const_cast<AOceanManager*>(this); }
 
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS \
->>>>>>> origin/master
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS \
 	private: \
 	static void StaticRegisterNativesAOceanManager(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_AOceanManager(); \
@@ -90,11 +66,7 @@ struct FVector;
 	virtual UObject* _getUObject() const override { return const_cast<AOceanManager*>(this); }
 
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_STANDARD_CONSTRUCTORS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_STANDARD_CONSTRUCTORS \
->>>>>>> origin/master
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AOceanManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AOceanManager) \
@@ -106,11 +78,7 @@ private: \
 public:
 
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_ENHANCED_CONSTRUCTORS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_ENHANCED_CONSTRUCTORS \
->>>>>>> origin/master
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AOceanManager(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -122,52 +90,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AOceanManager); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AOceanManager)
 
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_86_PROLOG
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_GENERATED_BODY_LEGACY \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_86_PROLOG
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_STANDARD_CONSTRUCTORS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_86_PROLOG
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_GENERATED_BODY_LEGACY \
-PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-public: \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_STANDARD_CONSTRUCTORS \
->>>>>>> origin/master
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_GENERATED_BODY \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS_NO_PURE_DECLS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_ENHANCED_CONSTRUCTORS \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_GENERATED_BODY \
-PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-public: \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS_NO_PURE_DECLS \
-	WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_ENHANCED_CONSTRUCTORS \
->>>>>>> origin/master
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_RPC_WRAPPERS_NO_PURE_DECLS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_INCLASS_NO_PURE_DECLS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h_88_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class OceanManager."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-<<<<<<< HEAD
-#define CURRENT_FILE_ID WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h
-=======
-#define CURRENT_FILE_ID WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h
->>>>>>> origin/master
+#define CURRENT_FILE_ID Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_OceanManager_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

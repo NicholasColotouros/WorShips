@@ -28,7 +28,7 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* InputComponent) override;
 
 public:
-	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)
+	UPROPERTY(Replicated, EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)
 		float Health;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)

@@ -39,6 +39,9 @@ AWorshipCharacter::AWorshipCharacter()
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named MyCharacter (to avoid direct content references in C++)
+
+	CheatCodeInput = new RotatingArray<EControllerInputEnum::Type>(MaxCheatCodeLength);
+	InitializeCheatCodes();
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -51,9 +54,6 @@ void AWorshipCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 	InputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	InputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
-
-	InputComponent->BindAction("TargetSpell", IE_Pressed, this, &AWorshipCharacter::TargetSpellViewPressed);
-	InputComponent->BindAction("TargetSpell", IE_Released, this, &AWorshipCharacter::TargetSpellViewReleased);
 
 	InputComponent->BindAxis("MoveForward", this, &AWorshipCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AWorshipCharacter::MoveRight);
@@ -130,13 +130,72 @@ void AWorshipCharacter::MoveRight(float Value)
 	}
 }
 
-void AWorshipCharacter::TargetSpellViewPressed()
+void AWorshipCharacter::CheatCodeButtonPressed()
 {
-	CameraBoom->TargetArmLength = 2000.0f;
+	APlayerController* controller = Cast<APlayerController, AController>(Controller);
+	if (controller)
+	{
+		// DPad
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_DPad_Down)) { CheatCodeInput->Add(EControllerInputEnum::DOWN); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_DPad_Left)) { CheatCodeInput->Add(EControllerInputEnum::LEFT); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_DPad_Right)) { CheatCodeInput->Add(EControllerInputEnum::RIGHT); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_DPad_Up)) { CheatCodeInput->Add(EControllerInputEnum::UP); }
+
+		// Start/Select
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_Special_Left)) { CheatCodeInput->Add(EControllerInputEnum::SELECT); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_Special_Right)) { CheatCodeInput->Add(EControllerInputEnum::START); }
+
+		// Face Buttons
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Bottom)) { CheatCodeInput->Add(EControllerInputEnum::A); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Left)) { CheatCodeInput->Add(EControllerInputEnum::X); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Right)) { CheatCodeInput->Add(EControllerInputEnum::B); }
+		if (controller->WasInputKeyJustPressed(EKeys::Gamepad_FaceButton_Top)) { CheatCodeInput->Add(EControllerInputEnum::Y); }
+	}
 }
 
-
-void AWorshipCharacter::TargetSpellViewReleased()
+void AWorshipCharacter::InitializeCheatCodes()
 {
-	CameraBoom->TargetArmLength = 300.0f;
+	CheatCodes = new TMap<ECheatCodeEnum::Type, TArray<EControllerInputEnum::Type>>();
+
+	// Insert the konami Code
+	TArray<EControllerInputEnum::Type>* konamiCode = new TArray<EControllerInputEnum::Type>();
+	konamiCode->Add(EControllerInputEnum::UP);
+	konamiCode->Add(EControllerInputEnum::UP);
+	konamiCode->Add(EControllerInputEnum::DOWN);
+	konamiCode->Add(EControllerInputEnum::DOWN);
+	konamiCode->Add(EControllerInputEnum::LEFT);
+	konamiCode->Add(EControllerInputEnum::RIGHT);
+	konamiCode->Add(EControllerInputEnum::LEFT);
+	konamiCode->Add(EControllerInputEnum::RIGHT);
+	konamiCode->Add(EControllerInputEnum::B);
+	konamiCode->Add(EControllerInputEnum::A);
+
+	CheatCodes->Add(ECheatCodeEnum::KONAMICODE, *konamiCode);
+}
+
+// Checks input and returns the matching cheat code, if any
+ECheatCodeEnum::Type AWorshipCharacter::CheckCheatCodeInput()
+{
+	if (CheatCodes && CheatCodeInput)
+	{
+		for (auto cheatCodeIt = CheatCodes->CreateIterator(); cheatCodeIt; ++cheatCodeIt)
+		{
+			ECheatCodeEnum::Type code = cheatCodeIt.Key();
+			TArray<EControllerInputEnum::Type>& codeSequence = cheatCodeIt.Value();
+
+			bool sequenceMatched = true;
+			for (int i = 0; i < codeSequence.Num(); i++)
+			{
+				if (codeSequence[i] != CheatCodeInput->Get(i))
+				{
+					sequenceMatched = false;
+				}
+			}
+			if (sequenceMatched)
+			{
+				return code;
+			}
+		}
+	}
+	return ECheatCodeEnum::NONE;
 }

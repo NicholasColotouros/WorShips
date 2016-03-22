@@ -15,7 +15,7 @@ class WORSHIP_API AWorshipBallista : public AWorshipVehicle
 
 public:
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
-		void Fire();
+	void Fire();
 
 
 

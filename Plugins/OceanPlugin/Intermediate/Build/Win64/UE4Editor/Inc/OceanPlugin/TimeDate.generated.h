@@ -13,21 +13,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define OCEANPLUGIN_TimeDate_generated_h
 
-<<<<<<< HEAD
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Sky_TimeDate_h_83_GENERATED_BODY \
-=======
-#define WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Sky_TimeDate_h_83_GENERATED_BODY \
->>>>>>> origin/master
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Sky_TimeDate_h_83_GENERATED_BODY \
 	friend OCEANPLUGIN_API class UScriptStruct* Z_Construct_UScriptStruct_FTimeDate(); \
 	OCEANPLUGIN_API static class UScriptStruct* StaticStruct();
 
 
 #undef CURRENT_FILE_ID
-<<<<<<< HEAD
-#define CURRENT_FILE_ID WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Sky_TimeDate_h
-=======
-#define CURRENT_FILE_ID WorShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Sky_TimeDate_h
->>>>>>> origin/master
+#define CURRENT_FILE_ID Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_Sky_TimeDate_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
