@@ -18,8 +18,8 @@ void AWorshipVehicle::GetLifetimeReplicatedProps(TArray< FLifetimeProperty>& Out
 {
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 
-
 	DOREPLIFETIME(AWorshipVehicle, Health);
+	DOREPLIFETIME(AWorshipVehicle, WasKilledByGodPower);
 }
 
 // Called when the game starts or when spawned

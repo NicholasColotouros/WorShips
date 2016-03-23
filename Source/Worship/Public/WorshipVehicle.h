@@ -30,7 +30,10 @@ public:
 public:
 	UPROPERTY(Replicated, EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)
 		float Health;
-
+	
+	UPROPERTY(Replicated, EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)
+		bool WasKilledByGodPower;
+	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)
 		APawn* CurrentlyPossessing;
 
@@ -42,5 +45,4 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = Controls)
 		void LookUp(float axisValue);
-
 };
