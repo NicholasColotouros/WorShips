@@ -14,7 +14,7 @@ class APawn;
 #endif
 #define OCEANPLUGIN_CustomVehicleController_generated_h
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_RPC_WRAPPERS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execEnableBuoyancy) \
 	{ \
@@ -48,7 +48,7 @@ class APawn;
 	}
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execEnableBuoyancy) \
 	{ \
@@ -82,7 +82,7 @@ class APawn;
 	}
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_INCLASS_NO_PURE_DECLS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_INCLASS_NO_PURE_DECLS \
 	private: \
 	static void StaticRegisterNativesACustomVehicleController(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_ACustomVehicleController(); \
@@ -94,7 +94,7 @@ class APawn;
 	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_INCLASS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_INCLASS \
 	private: \
 	static void StaticRegisterNativesACustomVehicleController(); \
 	friend OCEANPLUGIN_API class UClass* Z_Construct_UClass_ACustomVehicleController(); \
@@ -106,7 +106,7 @@ class APawn;
 	void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_STANDARD_CONSTRUCTORS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACustomVehicleController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACustomVehicleController) \
@@ -118,7 +118,7 @@ private: \
 public:
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_ENHANCED_CONSTRUCTORS \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACustomVehicleController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -130,29 +130,29 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACustomVehicleController); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACustomVehicleController)
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_29_PROLOG
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_GENERATED_BODY_LEGACY \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_29_PROLOG
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_RPC_WRAPPERS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_INCLASS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_STANDARD_CONSTRUCTORS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_RPC_WRAPPERS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_INCLASS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_GENERATED_BODY \
+#define Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_INCLASS_NO_PURE_DECLS \
-	WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_ENHANCED_CONSTRUCTORS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_INCLASS_NO_PURE_DECLS \
+	Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h_32_ENHANCED_CONSTRUCTORS \
 static_assert(false, "Unknown access specifier for GENERATED_BODY() macro in class CustomVehicleController."); \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID WarShips_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h
+#define CURRENT_FILE_ID Worships_Plugins_OceanPlugin_Source_OceanPlugin_Classes_CustomVehicleController_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
