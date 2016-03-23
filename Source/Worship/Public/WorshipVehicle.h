@@ -30,6 +30,9 @@ public:
 public:
 	UPROPERTY(Replicated, EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)
 		float Health;
+
+	UFUNCTION(BlueprintCallable, Category = DmgSystem)
+		TArray<AActor*> GetWorshipChildren();
 	
 	UPROPERTY(Replicated, EditDefaultsOnly, BlueprintReadWrite, Category = DmgSystem)
 		bool WasKilledByGodPower;
