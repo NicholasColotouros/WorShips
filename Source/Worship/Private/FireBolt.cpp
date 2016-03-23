@@ -3,8 +3,8 @@
 #include "Worship.h"
 #include "FireBolt.h"
 #include "WorshipBallista.h"
-#include "WorshipBoat.h"
 #include "BallistaAIController.h"
+#include "Kismet/KismetMathLibrary.h"
 
 EBTNodeResult::Type UFireBolt::ExecuteTask(UBehaviorTreeComponent & OwnerComp, uint8 * NodeMemory)
 {
@@ -20,12 +20,19 @@ EBTNodeResult::Type UFireBolt::ExecuteTask(UBehaviorTreeComponent & OwnerComp, u
 	{
 		return EBTNodeResult::Failed;
 	}
+	float DistanceBetween = CurrentPawn->GetDistanceTo(PlayerPawn);
+	if (DistanceBetween < 5000.0f)
+	{
+		CurrentPawn->Fire();
+	}
+	return EBTNodeResult::Succeeded;
 
-	FRotator PlayerAimRotation = PlayerPawn->GetBaseAimRotation();
-	PlayerAimRotation.Roll = 0.0f;
-	PlayerAimRotation.Pitch = 0.0f;
-	FQuat PawnRotInput = PlayerAimRotation.Quaternion();
-	CurrentPawn->SetActorRotation(PawnRotInput);
+
+	//FRotator PlayerAimRotation = PlayerPawn->GetBaseAimRotation();
+	//PlayerAimRotation.Roll = 0.0f;
+	//PlayerAimRotation.Pitch = 0.0f;
+	//FQuat PawnRotInput = PlayerAimRotation.Quaternion();
+	//CurrentPawn->SetActorRotation(PawnRotInput);
 
 	//check if shooting the boat it's on
 	//AWorshipBoat* BoatParent = Cast<AWorshipBoat>(CurrentPawn->GetAttachParentActor());
@@ -56,8 +63,7 @@ EBTNodeResult::Type UFireBolt::ExecuteTask(UBehaviorTreeComponent & OwnerComp, u
 	//	itPlayers++;
 	//}
 
-	
-	CurrentPawn->Fire();
-	return EBTNodeResult::Succeeded;
+	//
+	//CurrentPawn->Fire();
+	//return EBTNodeResult::Succeeded;
 }
- //work in progress lol
