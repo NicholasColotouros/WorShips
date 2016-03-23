@@ -41,8 +41,3 @@ void AWorshipVehicle::SetupPlayerInputComponent(class UInputComponent* InputComp
 	Super::SetupPlayerInputComponent(InputComponent);
 
 }
-
-TArray<AActor*> AWorshipVehicle::GetWorshipChildren()
-{
-	return this->Children;
-}
