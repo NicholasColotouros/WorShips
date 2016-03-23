@@ -15,7 +15,7 @@ class WORSHIP_API AWorshipBoatAIController : public AAIController
 	
 	AWorshipBoatAIController(const class FObjectInitializer& ObjectInitializer);
 
-	void AWorshipBoatAIController::Possess(class APawn* InGamePawn);
+	void AWorshipBoatAIController::Possess(class APawn* InGamePawn) override;
 
 	UBehaviorTreeComponent* BehaviorComp;
 
