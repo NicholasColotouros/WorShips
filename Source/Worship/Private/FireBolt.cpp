@@ -21,7 +21,7 @@ EBTNodeResult::Type UFireBolt::ExecuteTask(UBehaviorTreeComponent & OwnerComp, u
 		return EBTNodeResult::Failed;
 	}
 	float DistanceBetween = CurrentPawn->GetDistanceTo(PlayerPawn);
-	if (DistanceBetween < 5000.0f)
+	if (DistanceBetween < 10000.0f)
 	{
 		CurrentPawn->Fire();
 	}
