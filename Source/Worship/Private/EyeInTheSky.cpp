@@ -14,7 +14,7 @@ AEyeInTheSky::AEyeInTheSky()
 	// Movement and camera
 	MoveSpeed = 2000.0f;
 	StartEyeHeight = 600.0f;
-	EyeHeight = 3000.0f;
+	EyeHeight = 6000.0f;
 	
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("/Game/Assets/Models/EyeInTheSkyPlaceholder"));
 	// Create the mesh component
