@@ -12,9 +12,9 @@ AEyeInTheSky::AEyeInTheSky()
 	PrimaryActorTick.bCanEverTick = true;
 	
 	// Movement and camera
-	MoveSpeed = 2000.0f;
+	MoveSpeed = 6000.0f;
 	StartEyeHeight = 1500.0f;
-	EyeHeight = 6000.0f;
+	EyeHeight = 20000.0f;
 	
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("/Game/Assets/Models/EyeInTheSkyPlaceholder"));
 	// Create the mesh component
