@@ -46,7 +46,29 @@ void AWorshipController::InitializeCheatCodes()
 	konamiCode->Add(EControllerInputEnum::B);
 	konamiCode->Add(EControllerInputEnum::A);
 
+	// Insert GodMode
+	TArray<EControllerInputEnum::Type>* godMode = new TArray<EControllerInputEnum::Type>();
+	godMode->Add(EControllerInputEnum::DOWN);
+	godMode->Add(EControllerInputEnum::RIGHT);
+	godMode->Add(EControllerInputEnum::X);
+	godMode->Add(EControllerInputEnum::DOWN);
+	godMode->Add(EControllerInputEnum::RIGHT);
+	godMode->Add(EControllerInputEnum::X);
+
+	// Insert Rapid Fire
+	TArray<EControllerInputEnum::Type>* rapidFire = new TArray<EControllerInputEnum::Type>();
+	rapidFire->Add(EControllerInputEnum::RIGHT);
+	rapidFire->Add(EControllerInputEnum::DOWN);
+	rapidFire->Add(EControllerInputEnum::LEFT);
+	rapidFire->Add(EControllerInputEnum::UP);
+	rapidFire->Add(EControllerInputEnum::RIGHT);
+	rapidFire->Add(EControllerInputEnum::DOWN);
+	rapidFire->Add(EControllerInputEnum::LEFT);
+	rapidFire->Add(EControllerInputEnum::UP);
+
 	CheatCodes->Add(ECheatCodeEnum::KONAMICODE, *konamiCode);
+	CheatCodes->Add(ECheatCodeEnum::GODMODE, *godMode);
+	CheatCodes->Add(ECheatCodeEnum::RAPIDFIRE, *rapidFire);
 }
 
 // Checks input and returns the matching cheat code, if any

@@ -36,7 +36,9 @@ namespace ECheatCodeEnum
 	enum Type
 	{
 		NONE		UMETA(DisplayName = "None"),
-		KONAMICODE	UMETA(DisplayName = "Konami Code")
+		KONAMICODE	UMETA(DisplayName = "Konami Code"),
+		GODMODE		UMETA(DisplayName = "God Mode"),
+		RAPIDFIRE	UMETA(DisplayName = "Rapid Fire")
 	};
 }
 
