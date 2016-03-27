@@ -1,7 +1,11 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**
+	A simple rotating array used to track controller input for cheat codes.
+	The implementation is in the .h file due to the template not compiling when I put it in the .cpp
+
+	@author Nicholas Nathan Colotouros
+*/
 
 #pragma once
-
 template<class T>
 class WORSHIP_API RotatingArray
 {
