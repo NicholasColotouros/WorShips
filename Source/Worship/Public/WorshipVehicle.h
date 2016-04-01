@@ -1,4 +1,10 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**
+	A base class for vehicles used in the game designed to expose information from Blueprints using stub methods
+	so that the AI can be written in C++ rather than blueprints.
+
+	@author Nicholas Nathan Colotouros
+*/
+
 
 #pragma once
 

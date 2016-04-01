@@ -1,13 +1,16 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**
+	A base class for the boats (man of war, player boat) used in the game designed to expose information from Blueprints 
+	using stub methods so that the AI can be written in C++ rather than blueprints.
+
+	@author Nicholas Nathan Colotouros
+*/
+
 
 #pragma once
 
 #include "WorshipVehicle.h"
 #include "WorshipBoat.generated.h"
 
-/**
- *
- */
 UCLASS()
 class WORSHIP_API AWorshipBoat : public AWorshipVehicle
 {

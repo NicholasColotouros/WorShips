@@ -1,4 +1,9 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**
+	The C++ class for the top down view that casts god powers. 
+	The pawn used in game is a blueprint based on this class.
+
+	@author Nicholas Nathan Colotouros
+*/
 
 #pragma once
 

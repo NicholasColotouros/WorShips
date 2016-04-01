@@ -1,4 +1,6 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+/**
+	@author Nicholas Nathan Colotouros
+*/
 
 #include "Worship.h"
 #include "EyeInTheSky.h"
@@ -12,9 +14,9 @@ AEyeInTheSky::AEyeInTheSky()
 	PrimaryActorTick.bCanEverTick = true;
 	
 	// Movement and camera
-	MoveSpeed = 2000.0f;
-	StartEyeHeight = 600.0f;
-	EyeHeight = 3000.0f;
+	MoveSpeed = 6000.0f;
+	StartEyeHeight = 1500.0f;
+	EyeHeight = 20000.0f;
 	
 	static ConstructorHelpers::FObjectFinder<UStaticMesh> ShipMesh(TEXT("/Game/Assets/Models/EyeInTheSkyPlaceholder"));
 	// Create the mesh component
@@ -28,7 +30,7 @@ AEyeInTheSky::AEyeInTheSky()
 	CameraBoom->AttachTo(RootComponent);
 	CameraBoom->bAbsoluteRotation = true; // Don't want arm to rotate when ship does
 	CameraBoom->TargetArmLength = StartEyeHeight;
-	CameraBoom->RelativeRotation = FRotator(-90.f, 0.f, 0.f);
+	CameraBoom->RelativeRotation = FRotator(-70.f, 0.f, 0.f);
 	CameraBoom->bDoCollisionTest = false; // Don't want to pull camera in when it collides with level
 
 	// Create a camera...

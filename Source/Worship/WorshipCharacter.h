@@ -4,42 +4,12 @@
 #include "GameFramework/Character.h"
 #include "WorshipCharacter.generated.h"
 
-UENUM(BlueprintType)
-namespace EControllerInputEnum
-{
-	enum Type
-	{
-		A		UMETA(DisplayName = "A Button"),
-		B		UMETA(DisplayName = "B Button"),
-		X		UMETA(DisplayName = "X Button"),
-		Y		UMETA(DisplayName = "Y Button"),
-
-		UP		UMETA(DisplayName = "D-Pad Up"),
-		DOWN	UMETA(DisplayName = "D-Pad Down"),
-		LEFT	UMETA(DisplayName = "D-Pad Left"),
-		RIGHT	UMETA(DisplayName = "D-Pad Right"),
-
-		START	UMETA(DisplayName = "Start Button"),
-		SELECT	UMETA(DisplayName = "Select Button")
-	};
-}
-
-UENUM(BlueprintType)
-namespace ECheatCodeEnum
-{
-	enum Type
-	{
-		NONE		UMETA(DisplayName = "None"),
-		KONAMICODE	UMETA(DisplayName = "Konami Code")
-	};
-}
-
 UCLASS(config = Game)
 class AWorshipCharacter : public ACharacter
 {
 	GENERATED_BODY()
 
-		/** Camera boom positioning the camera behind the character */
+	/** Camera boom positioning the camera behind the character */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
 	class USpringArmComponent* CameraBoom;
 
@@ -100,21 +70,7 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
-	// Records the last cheat code button pressed
-	UFUNCTION(BlueprintCallable, Category = Cheats)
-		ECheatCodeEnum::Type CheckCheatCodeInput();
+	
 
-	// Returns the cheat code entered if any
-	UFUNCTION(BlueprintCallable, Category = Cheats)
-		void CheatCodeButtonPressed();
-
-private:
-
-	// Handles cheat code input
-	const int MaxCheatCodeLength = 11;
-	RotatingArray<EControllerInputEnum::Type> *CheatCodeInput;
-	TMap<ECheatCodeEnum::Type, TArray<EControllerInputEnum::Type>> *CheatCodes;
-
-	void InitializeCheatCodes();
 };
 
