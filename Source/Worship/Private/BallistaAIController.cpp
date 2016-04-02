@@ -1,5 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+/*
+* Author: Philippe Tremblay, Chuong Trinh
+*/
 #include "Worship.h"
 #include "BallistaAIController.h"
 #include "WorshipBallista.h"

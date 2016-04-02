@@ -1,5 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+/*
+* Author: Terrence KO
+*/
 #include "Worship.h"
 #include "JsonHelper.h"
 #include "FileManager.h"

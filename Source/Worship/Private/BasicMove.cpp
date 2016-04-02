@@ -1,5 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+/*
+* Author: Philippe Tremblay
+*/
 #include "Worship.h"
 #include "BasicMove.h"
 #include "WorshipBoatAIController.h"

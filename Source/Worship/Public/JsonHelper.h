@@ -9,8 +9,9 @@
 
 
 /**
- * 
- */
+* Author: Terrence KO
+*
+*/
 class WORSHIP_API JsonHelper
 {
 public:

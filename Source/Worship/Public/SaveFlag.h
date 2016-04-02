@@ -1,5 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
-
+/*
+* Author: Terrence KO
+*/
 #pragma once
 
 #include "GameFramework/Actor.h"

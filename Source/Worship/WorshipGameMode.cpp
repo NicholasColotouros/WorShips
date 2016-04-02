@@ -1,5 +1,8 @@
 // Copyright 1998-2015 Epic Games, Inc. All Rights Reserved.
 
+/*
+* Author: Terrence KO
+*/
 #include "Worship.h"
 #include "WorshipGameMode.h"
 #include "WorshipCharacter.h"

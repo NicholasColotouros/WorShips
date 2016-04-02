@@ -1,4 +1,7 @@
 // Copyright 1998-2015 Epic Games, Inc. All Rights Reserved.
+/*
+* Author: Terrence KO
+*/
 #pragma once
 #include "GameFramework/GameMode.h"
 #include "WorshipGameMode.generated.h"
