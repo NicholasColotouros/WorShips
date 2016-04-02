@@ -6,7 +6,8 @@ public class Worship : ModuleRules
 {
 	public Worship(TargetInfo Target)
 	{
-        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "AIModule"});
+        PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "AIModule","Json","JsonUtilities","HTTP"});
+        PrivateIncludePathModuleNames.AddRange(new string[] { "HTTP" });
 
-	}
+    }
 }
