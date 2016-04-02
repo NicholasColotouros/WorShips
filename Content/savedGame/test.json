@@ -1,0 +1,5 @@
+{
+	"SomeBool": true,
+	"SomeString": "test.json",
+	"SomNumber": 32
+}
