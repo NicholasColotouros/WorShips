@@ -24,8 +24,8 @@ void AWorshipGameMode::AddMana(int32 Amount)
 	//to be implemented
 }
 
-void AWorshipGameMode::SaveGame()
+void AWorshipGameMode::SaveGame(FVector PlayerLocation, int32 NumEnemy)
 {
 	JsonHelper j;
-	j.setJsonObject("test.json");
+	j.setJsonObject("test.json",PlayerLocation,NumEnemy);
 }

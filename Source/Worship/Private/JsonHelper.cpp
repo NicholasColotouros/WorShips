@@ -21,7 +21,7 @@ TSharedPtr<FJsonObject> JsonHelper::loadJsonObject(const FString& fileName) {
 	//JsonObject.IsValid()
 	return JsonObject;
 }
-bool JsonHelper::setJsonObject(const FString& fileName) {
+bool JsonHelper::setJsonObject(const FString& fileName, const FVector PlayerLocation, int32 NumEnemy) {
 	//save game
 	//apparently creates JSON reader, not sure what it does really
 	// Create a writer and hold it in this FString
@@ -46,9 +46,14 @@ bool JsonHelper::setJsonObject(const FString& fileName) {
 	// JsonWriter->Close();
 	// ==================================================================================================
 
-	JsonObject->SetBoolField("SomeBool", true);
-	JsonObject->SetStringField("SomeString", *fileName);
-	JsonObject->SetNumberField("SomNumber", 32.0);
+	//JsonObject->SetBoolField("SomeBool", true);
+	//JsonObject->SetStringField("SomeString", *fileName);
+	//JsonObject->SetNumberField("SomNumber", 32.0);
+	JsonObject->SetNumberField("spawnX", PlayerLocation.X);
+	JsonObject->SetNumberField("spawnY", PlayerLocation.Y);
+	JsonObject->SetNumberField("spawnZ", PlayerLocation.Z);
+	JsonObject->SetNumberField("enemies", NumEnemy);
+
 
 	FJsonSerializer::Serialize(JsonObject.ToSharedRef(), JsonWriter);
 	FString gameContentDir = FPaths::GameContentDir();

@@ -16,7 +16,7 @@ public:
 	//Function to add score.
 	void AddMana(int32 Amount);
 	// void ANetworkGameMode::AddHealth(int32 Amount, int32 Player);
-	void SaveGame();
+	void SaveGame(FVector PlayerLocaton, int32 NumEnemy);
 };
 
 
