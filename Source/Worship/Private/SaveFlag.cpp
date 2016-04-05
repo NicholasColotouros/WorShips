@@ -4,7 +4,6 @@
 */
 #include "Worship.h"
 #include "SaveFlag.h"
-
 #include "Engine.h"
 // Include our game mode for casting.
 #include "WorshipGameMode.h"
@@ -32,7 +31,8 @@ void ASaveFlag::SaveGame_Implementation()
 	// Get the game mode and cast it to our game mode.
 	AWorshipGameMode* TheGameMode = Cast<AWorshipGameMode>(GetWorld()->GetAuthGameMode());
 	//Add Score!
-	TheGameMode->SaveGame();
+	const FVector playerLocation = GetActorLocation();
+	TheGameMode->SaveGame(playerLocation,1);
 }
 
 bool ASaveFlag::SaveGame_Validate()

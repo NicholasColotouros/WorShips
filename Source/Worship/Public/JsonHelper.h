@@ -19,7 +19,7 @@ public:
 
 	void saveRequestComplete(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 	void loadRequestComplete(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
-	bool setJsonObject(const FString& fileName);
+	bool setJsonObject(const FString& fileName, const FVector PlayerLocation, int32 NumEnemy);
 
 	FHttpModule* Http;
 };
