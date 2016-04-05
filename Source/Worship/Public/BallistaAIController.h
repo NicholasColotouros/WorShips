@@ -18,7 +18,7 @@ class WORSHIP_API ABallistaAIController : public AAIController
 	
 		ABallistaAIController(const class FObjectInitializer& ObjectInitializer);
 
-	void ABallistaAIController::Possess(class APawn* InGamePawn) override;
+	void Possess(class APawn* InGamePawn) override;
 
 	UBehaviorTreeComponent* BehaviorComp;
 
