@@ -70,7 +70,8 @@ public:
 	/** Returns FollowCamera subobject **/
 	FORCEINLINE class UCameraComponent* GetFollowCamera() const { return FollowCamera; }
 
-	
+	//for load game
+	void LoadGame();
 
 };
 
