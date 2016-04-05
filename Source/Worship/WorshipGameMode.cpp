@@ -29,3 +29,19 @@ void AWorshipGameMode::SaveGame(FVector PlayerLocation, int32 NumEnemy)
 	JsonHelper j;
 	j.setJsonObject("test.json",PlayerLocation,NumEnemy);
 }
+
+FVector AWorshipGameMode::LoadGame()
+{
+	JsonHelper j;
+	TSharedPtr<FJsonObject> JsonObject = j.loadJsonObject("test.json");
+	FVector PlayerLocation;
+	PlayerLocation.X = JsonObject->GetNumberField("spawnX");
+	PlayerLocation.Y = JsonObject->GetNumberField("spawnY");
+	PlayerLocation.Z = JsonObject->GetNumberField("spawnZ");
+
+	int32 NumEnemies = JsonObject->GetIntegerField("enemies");
+
+	return PlayerLocation;
+	
+
+}

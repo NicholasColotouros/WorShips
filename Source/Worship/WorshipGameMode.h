@@ -17,6 +17,9 @@ public:
 	void AddMana(int32 Amount);
 	// void ANetworkGameMode::AddHealth(int32 Amount, int32 Player);
 	void SaveGame(FVector PlayerLocaton, int32 NumEnemy);
+
+	//getting the last location from most recent checkpoint file
+	FVector LoadGame();
 };
 
 
