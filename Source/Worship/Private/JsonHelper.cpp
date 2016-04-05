@@ -17,11 +17,25 @@ TSharedPtr<FJsonObject> JsonHelper::loadJsonObject(const FString& fileName) {
 	TSharedRef<TJsonReader<>> JsonReader = FJsonStringReader::Create(JsonStr);
 	TSharedPtr<FJsonObject> JsonObject = MakeShareable(new FJsonObject());
 
+	TSharedRef<IHttpRequest> Request = FHttpModule::Get().CreateRequest();
+	Request->SetVerb(TEXT("POST"));
+	Request->SetURL(TEXT("http://localhost:8080/loadWorld"));
+	Request->SetHeader(TEXT("Content-Type"), TEXT("application/json"));
+	Request->OnProcessRequestComplete().BindRaw(this, &JsonHelper::loadRequestComplete);
+
+	FHttpResponsePtr response = Request->GetResponse();
+	FHttpResponsePtr httpnull;
+  if (response != httpnull){
+      if (Request->GetResponse()->GetContentAsString() != ""){
+					TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(Response->GetResponse()->GetContentAsString());
+      }
+  }
+
 	FJsonSerializer::Deserialize(JsonReader, JsonObject);
 	//JsonObject.IsValid()
 	return JsonObject;
 }
-bool JsonHelper::setJsonObject(const FString& fileName, const FVector PlayerLocation, int32 NumEnemy) {
+bool JsonHelper::setJsonObject(const FString& fileName) {
 	//save game
 	//apparently creates JSON reader, not sure what it does really
 	// Create a writer and hold it in this FString
@@ -46,14 +60,9 @@ bool JsonHelper::setJsonObject(const FString& fileName, const FVector PlayerLoca
 	// JsonWriter->Close();
 	// ==================================================================================================
 
-	//JsonObject->SetBoolField("SomeBool", true);
-	//JsonObject->SetStringField("SomeString", *fileName);
-	//JsonObject->SetNumberField("SomNumber", 32.0);
-	JsonObject->SetNumberField("spawnX", PlayerLocation.X);
-	JsonObject->SetNumberField("spawnY", PlayerLocation.Y);
-	JsonObject->SetNumberField("spawnZ", PlayerLocation.Z);
-	JsonObject->SetNumberField("enemies", NumEnemy);
-
+	// JsonObject->SetBoolField("SomeBool", true);
+	// JsonObject->SetStringField("SomeString", *fileName);
+	// JsonObject->SetNumberField("SomNumber", 32.0);
 
 	FJsonSerializer::Serialize(JsonObject.ToSharedRef(), JsonWriter);
 	FString gameContentDir = FPaths::GameContentDir();
@@ -86,9 +95,6 @@ void JsonHelper::saveRequestComplete(FHttpRequestPtr Request, FHttpResponsePtr R
 
 void JsonHelper::loadRequestComplete(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful) {
 	if (bWasSuccessful && Response->GetContentType() == "application/json") {
-		TSharedPtr<FJsonObject> JsonObject = MakeShareable(new FJsonObject());
-		TSharedRef<TJsonReader<TCHAR>> JsonReader = TJsonReaderFactory<TCHAR>::Create(Response->GetContentAsString());
-		FJsonSerializer::Deserialize(JsonReader, JsonObject);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Blue, "Connected succesfully");
 	}
 	else {
