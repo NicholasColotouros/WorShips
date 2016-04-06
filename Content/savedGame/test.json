@@ -1,5 +1,6 @@
 {
-	"SomeBool": true,
-	"SomeString": "test.json",
-	"SomNumber": 32
+	"spawnX": -580,
+	"spawnY": 700,
+	"spawnZ": 520,
+	"enemies": 1
 }

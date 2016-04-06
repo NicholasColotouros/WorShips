@@ -2,6 +2,7 @@
 
 #include "Worship.h"
 #include "WorshipCharacter.h"
+#include "WorshipGameMode.h"
 
 //////////////////////////////////////////////////////////////////////////
 // AWorshipCharacter
@@ -53,6 +54,8 @@ void AWorshipCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 	InputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	InputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 
+	//for load game test
+	InputComponent->BindAction("LoadCheckpoint", IE_Pressed, this, &AWorshipCharacter::LoadGame);
 
 	InputComponent->BindAxis("MoveForward", this, &AWorshipCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &AWorshipCharacter::MoveRight);
@@ -68,6 +71,14 @@ void AWorshipCharacter::SetupPlayerInputComponent(class UInputComponent* InputCo
 	// handle touch devices
 	InputComponent->BindTouch(IE_Pressed, this, &AWorshipCharacter::TouchStarted);
 	InputComponent->BindTouch(IE_Released, this, &AWorshipCharacter::TouchStopped);
+}
+
+void AWorshipCharacter::LoadGame()
+{
+	AWorshipGameMode* TheGameMode = Cast<AWorshipGameMode>(GetWorld()->GetAuthGameMode());
+
+	FVector PlayerLocation = TheGameMode->LoadGame();
+	this->SetActorLocation(PlayerLocation, false);
 }
 
 
