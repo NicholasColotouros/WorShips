@@ -20,7 +20,7 @@ public:
 	UFUNCTION()
 	void OnOverlapBegin(class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 	// Our server function to update the score.
-	UFUNCTION(Reliable, Server, WithValidation)
+	UFUNCTION(BlueprintCallable, Reliable, Server, WithValidation, Category = Flag)
 	void SaveGame();
 	
 	void SaveGame_Implementation();
